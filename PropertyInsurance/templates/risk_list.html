@@ -1,0 +1,56 @@
+
+
+{% extends 'masterpage.html' %}
+{% block content %}
+<div id=app>
+    <p> {{ ntitle }} </p>
+    <!--ul>
+        <li v-for="day in {{name}}">
+            <h4> Day [[ name ]]</h4>
+        </li>
+    </ul-->
+    <table>
+	<tr>
+		<td>
+    			Name : <input type="text" v-model="name" placeholder="First Name" />
+			<input type="text" v-model="name" placeholder="Last Name" />
+		</td>
+	</tr>
+	<tr>
+                <td>
+                        Birth Date : <input type="date" v-model="mydate" placeholder="Select Date" />
+                </td>
+        </tr>
+	<tr>
+                <td>
+			<section>
+				<input type="radio" v-bind:value="a" v-model="gender">Male
+				<input type="radio" v-bind:value="b" v-model="gender">Female
+			</section>
+                </td>
+        </tr>
+	<tr>
+		<td>
+		<select v-model="selected">
+  			<option disabled value="">Please select one</option>
+  		 	<!--option v-for="option in {{ options }}">
+    				[[ option ]]
+  			</option-->
+		</select>	
+		</td>
+	</tr>
+     </table>
+	<button v-bind:disabled="isButtonDisabled">Submit</button>
+</div>
+<script>
+    new Vue({
+        delimiters: ['[[', ']]'],
+        el: '#app',
+        data: {
+            title: 'Risk List',
+	    a:'One',
+	    b:'Two',
+        }
+    })
+</script>
+{% endblock %}
