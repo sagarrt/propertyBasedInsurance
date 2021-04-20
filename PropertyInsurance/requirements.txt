@@ -96,7 +96,7 @@ uTidylib==0.2
 vatnumber==1.2
 vobject==0.8.1rc0
 wcwidth==0.1.7
-Werkzeug==0.10.4
+Werkzeug==0.15.3
 wkhtmltopdf==0.2
 xlrd==1.0.0
 XlsxWriter==1.0.2
