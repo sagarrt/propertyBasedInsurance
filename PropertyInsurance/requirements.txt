@@ -24,7 +24,7 @@ get==0.0.39
 gevent==1.1.0
 googlemaps==2.5.1
 greenlet==0.4.9
-html5lib==0.999
+html5lib==0.99999999
 httpie==0.9.9
 idna==2.5
 image==1.5.5
