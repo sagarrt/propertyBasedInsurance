@@ -74,7 +74,7 @@ PyWebDAV==0.9.8
 PyYAML==3.11
 query-string==0.0.28
 ratelim==0.1.6
-reportlab==3.4.0
+reportlab==3.5.55
 request==0.0.26
 requests==2.17.3
 roman==2.0.0
